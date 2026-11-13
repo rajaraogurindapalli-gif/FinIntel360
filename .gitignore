@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.env
+*.env
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+archive.zip
+RawData/
+"Helios Master Technical Interview Gui*.pdf"
+Helios Master Technical Interview Guide.pdf 
