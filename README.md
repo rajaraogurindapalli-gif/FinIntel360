@@ -43,32 +43,40 @@
 |  - Page 4: Capital MILP Optimizer |     |            & FinCEN SAR Action Plan     |
 +-----------------------------------+     +-----------------------------------------+
 
-FinIntel360/
-├── app_finintel_copilot.py                # Streamlit ReAct multi-tool agent & TF-IDF SEC/FinCEN RAG engine
-├── notebooks/
-│   └── 01_finintel_medallion_etl_ml_milp.ipynb  # Microsoft Fabric PySpark ETL, Hybrid ML, MC VaR & SciPy MILP
-├── CopilotData/
-│   ├── top_p1_fraud_alerts.json           # Gold Lakehouse P1 critical alert snapshot for local Copilot inference
-│   ├── treasury_milp_plan.json            # Optimal MILP allocation schedule (+$9.02M yield uplift)
-│   └── peer_financials_benchmark.json     # Quarterly peer benchmark dataset (APEX, PYPL, XYZ, FI)
-├── assets/                                # Dashboard & ReAct Copilot screenshots
-├── requirements.txt                       # Python dependencies
-├── .gitignore                             # Excludes virtual environments, caches, and secret files
-└── README.md
-
 ## Executive Visual Showcase
 
 ### 1. Executive C-Suite Command Center (Power BI Direct Lake)
-![Executive C-Suite Command Center](assets/page1_command_center.png)
+![Executive C-Suite Command Center](Assets/Executive%20C-Suite%20Command%20Center.png)
 
 ### 2. Real-Time Fraud & AML Surveillance (With Dynamic Copilot URL Handoff)
-![Real-Time Fraud & AML Surveillance](assets/page2_fraud_surveillance.png)
+![Real-Time Fraud & AML Surveillance](Assets/Real-Time%20Fraud%20%26%20AML%20Surveillance.png)
 
-### 3. Autonomous ReAct + RAG Copilot Investigation (`tx_id=4440`)
-![Autonomous ReAct Copilot Memo](assets/copilot_react_memo.png)
+### 3. Macro Stress-Testing & Monte Carlo VaR
+![Macro Stress-Testing & Monte Carlo VaR](Assets/Macro%20Stress-Testing%20%26%20Monte%20Carlo%20VaR.png)
 
-### 4. Macro Stress-Testing & Monte Carlo VaR
-![Macro Stress-Testing & Monte Carlo VaR](assets/page3_macro_var.png)
+### 4. Working Capital MILP Optimizer (`+$9.02M` Annual Yield Uplift)
+![Capital MILP Optimizer](Assets/Capital%20MLP%20Optimizer.png)
 
-### 5. Working Capital MILP Optimizer (`+$9.02M` Annual Yield Uplift)
-![Capital MILP Optimizer](assets/page4_treasury_milp.png)
+---
+
+## Repository Structure
+
+```text
+FinIntel360/
+├── app_finintel_copilot.py                                                  # Streamlit ReAct multi-tool agent & TF-IDF SEC/FinCEN RAG engine
+├── Notebooks/
+│   ├── NOTEBOOK 01_ BRONZE INGESTION (FRED MACRO + SEC EDGAR + SYNTHETIC APEX).ipynb
+│   ├── Notebook_02_Silver_Feature_Engineering.ipynb
+│   ├── Notebook_03_Gold_Star_Schema.ipynb
+│   ├── Notebook_04_Predictive_ML_and_Governance.ipynb
+│   ├── Notebook_05_Prescriptive_Treasury_MILP.ipynb
+│   └── Notebook_06_Export_Copilot_Context.ipynb
+├── CopilotData/
+│   ├── top_p1_fraud_alerts.json                                             # Gold Lakehouse P1 critical alert snapshot for local Copilot inference
+│   ├── treasury_milp_plan.json                                              # Optimal MILP allocation schedule (+$9.02M yield uplift)
+│   └── peer_financials_benchmark.json                                       # Quarterly peer benchmark dataset (APEX, PYPL, XYZ, FI)
+├── Assets/                                                                  # Power BI Direct Lake .pbix & dashboard screenshots
+├── FinIntel 360 Master Project Specification.pdf                            # Full architectural & functional specification
+├── requirements.txt                                                         # Python dependencies
+├── .gitignore                                                               # Excludes raw archives, caches, and secret files
+└── README.md
